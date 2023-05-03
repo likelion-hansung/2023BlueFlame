@@ -1,0 +1,27 @@
+#main{
+    background-color: #090B26;
+    text-align: center ;
+    color: #3A4DEE;
+}
+
+.mainTitleText{
+    /* 2023년 한성대학교 대동제 */
+
+    font-size: 14px;
+    line-height: 160%;
+}
+
+.mainBlueFlameText{
+    font-size: 60px;
+}
+
+.mainStandardText{
+    font-size: 12px;
+    line-height: 160%;
+    letter-spacing: -0.04em;
+}
+
+.mainSmallText{
+    font-size: 8px;
+    line-height: 160%;
+}
