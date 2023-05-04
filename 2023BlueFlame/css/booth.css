@@ -1,1 +1,299 @@
 /* 부스 */
+body{
+    position: relative;
+    width: 375px;
+    left: 522px;
+    height: 723px;
+    background: #090B26;
+
+    margin: 0px;
+    border: 1px solid red;
+}
+
+/* main navbar */
+#first-tap-wrap{
+    width: 375px;
+    height: 50px;
+    display: flex;
+    
+    position: absolute;
+    top: 118px;
+}
+
+#first-tap1{
+    width: 187px;
+    height: 50px;
+    border-bottom: 1px solid #3A4DEE;
+}
+
+#first-tap2{
+    width: 187px;
+    height: 50px;
+    border-bottom: 1px solid #3A4DEE;
+}
+
+#first-time{
+    /* 18:00 이전 */
+    position: absolute;
+    left: 66px;
+
+    font-family: 'Pretendard';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 20px;
+
+    text-align: center;
+    letter-spacing: 0.1px;
+    color: #3A4DEE;
+}
+
+#group-info{
+    /* 동아리 부스 */
+    position: absolute;
+    left: 57px;
+    top: 23px;
+
+    font-family: 'Pretendard';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 20px;
+
+    text-align: center;
+    letter-spacing: 0.1px;
+    color: #3A4DEE;
+}
+
+#second-time{
+    position: absolute;
+    left: 254px;
+
+    font-family: 'Pretendard';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 20px;
+
+    text-align: center;
+    letter-spacing: 0.1px;
+    color: #3A4DEE;
+}
+
+#market-info{
+    position: absolute;
+    left: 245px;
+    top: 23px;
+
+    font-family: 'Pretendard';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 20px;
+
+    text-align: center;
+    letter-spacing: 0.1px;
+    color: #3A4DEE;
+}
+
+/* sub-navbar */
+.second-tap{
+    position: absolute;
+    width: 375px;
+    height: 553px;
+    top: 170px;
+}
+
+.loc1{
+    box-sizing: border-box;
+
+    position: absolute;
+    width: 97px;
+    height: 38px;
+    left: 26px;
+    top: 16px;
+    border: 1px solid #3A4DEE;
+    border-radius: 19px;
+}
+
+#location1{
+    background: #3A4DEE;
+}
+
+.loc2{
+    box-sizing: border-box;
+
+    position: absolute;
+    width: 97px;
+    height: 38px;
+    left: 139px;
+    top: 16px;
+
+    background: #3A4DEE;
+    border: 1px solid #3A4DEE;
+    border-radius: 19px;
+}
+
+#location2{
+    background: #3A4DEE;
+}
+
+.loc3{
+    box-sizing: border-box;
+    position: absolute;
+    width: 97px;
+    height: 38px;
+    left: 252px;
+    top: 16px;
+
+    background: #3A4DEE;
+    border: 1px solid #3A4DEE;
+    border-radius: 19px;
+}
+
+#location3{
+    background: #3A4DEE;
+}
+
+.loc1-text{
+    /* 잔디광장 */
+    position: absolute;
+    width: 49px;
+    height: 22px;
+    left: 24px;
+    top: 8px;
+
+    font-family: 'Pretendard';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 160%;
+    
+    text-align: center;
+}
+
+#location1-text{
+    color: #090B26;
+}
+
+.loc2-text{
+    /* 우촌관 */
+    position: absolute;
+    width: 49px;
+    height: 22px;
+    left: 24px;
+    top: 8px;
+
+    font-family: 'Pretendard';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 160%;
+    
+    text-align: center;
+}
+
+#location2-text{
+    color: #090B26;
+}
+
+.loc3-text{
+    /* 미래관 */
+    position: absolute;
+    width: 49px;
+    height: 22px;
+    left: 24px;
+    top: 8px;
+
+    font-family: 'Pretendard';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 160%;
+    
+    text-align: center;
+    color: #090B26;
+}
+
+#location3-text{
+    color: #090B26;
+}
+
+/* 세부 내용 */
+/* 부스 설명 첫번째 sector(2개 묶음) */
+.location-sector1-wrap{
+
+    position: absolute;
+    top: 70px;
+    left: 20px;
+    border: 1px solid white;
+    width: 335px;
+    height: 171px;
+}
+
+/* 부스 설명 두번째 sector(2개 묶음) */
+.location-sector2-wrap{
+    position: absolute;
+    top: 276px;
+    left: 20px;
+    border: 1px solid yellow;
+    width: 335px;
+    height: 171px;
+}
+
+/* sector의 첫번째 요소 */
+.location-sector1{
+    float: left;
+    width: 163px;
+    height: 171px;
+    border: 1px solid gray;
+}
+
+/* sector의 두번째 요소 */
+.location-sector2{
+    float: right;
+    width: 163px;
+    height: 171px;
+    border: 1px solid gray;
+}
+
+.img{
+    position: absolute;
+    width: 163px;
+    height: 115px;
+    margin: 0px;
+
+    background: rgba(58, 77, 238, 0.2);
+    border-radius: 8px;
+}
+
+.major{
+    position: absolute;
+    top: 123px;
+    margin: 0px;
+
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 20px;
+
+    letter-spacing: 0.1px;
+    color: #3A4DEE;
+}
+
+.game{
+    position: absolute;
+    margin: 0px;
+    top: 146px;
+
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 10px;
+    line-height: 12px;
+
+    letter-spacing: 0.1px;
+    color: #3A4DEE;
+}
+

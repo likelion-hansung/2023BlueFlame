@@ -1,14 +1,215 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/default.css">
-    <link rel="stylesheet" href="./css/booth.css">
-    <title>Document</title>
+    <link rel="stylesheet" href="/2023BlueFlame/css/default.css">
+    <link rel="stylesheet" href="/2023BlueFlame/css/booth.css">
+    <title>부스</title>
 </head>
-<body>
-    부스
+
+<body onload="first1()">
+    <nav id="first-tap-wrap">
+        <div id="first-tap1" onclick="first1()">
+            <span id="first-time">18:00 이전</span>
+            <span id="group-info">동아리 부스</span>
+        </div>
+
+        <div id="first-tap2" onclick="second1()">
+            <span id="second-time">18:00 이후</span>
+            <span id="market-info">먹거리 장터</span>
+        </div>
+    </nav>
+
+    <div class="second-tap" id="group-wrap" onload="first1()">
+        <nav>
+            <div class="loc1" id="location1" onclick="first1()">
+                <span class="loc1-text" id="location1-text">잔디광장</span>
+            </div>
+            <div class="loc2" id="location2" onclick="first2()">
+                <span class="loc2-text" id="location2-text">우촌관</span>
+            </div>
+            <div class="loc3" id="location3" onclick="first3()">
+                <span class="loc3-text" id="location3-text">미래관</span>
+            </div>
+        </nav>
+
+        <div id="loc1-wrap">
+            <div class="location-sector1-wrap">
+                <div class="location-sector1">
+                    <p class="img" id="img1"><img></p>
+                    <p class="major" id="major1">컴퓨터 공학부</p>
+                    <p class="game" id="game1">#물총게임 #농구게임 <br> #동전찾기 게임</p>
+                </div>
+                <div class="location-sector2">
+                    <p class="img" id="img2"><img></p>
+                    <p class="major" id="majo2">기계전자 공학부</p>
+                    <p class="game" id="game2">#물총게임 #농구게임 <br> #동전찾기 게임</p>
+                </div>
+            </div>
+            <div class="location-sector2-wrap">
+                <div class="location-sector1">
+                    <p class="img" id="img2"><img></p>
+                    <p class="major" id="major">디자인 학부</p>
+                    <p class="game" id="game">#물총게임 #농구게임 <br> #동전찾기 게임</p>
+                </div>
+                <div class="location-sector2">
+                    <p class="img" id="img"><img></p>
+                    <p class="major" id="major">산업 공학부</p>
+                    <p class="game" id="game">#물총게임 #농구게임 <br> #동전찾기 게임</p>
+                </div>
+            </div>
+        </div>
+        <div id="loc2-wrap">
+            <div class="location-sector1-wrap">
+                <div class="location-sector1">
+                    <p class="img" id="img1"><img></p>
+                    <p class="major" id="major1">부동산학부</p>
+                    <p class="game" id="game1">#물총게임 #농구게임 <br> #동전찾기 게임</p>
+                </div>
+                <div class="location-sector2">
+                    <p class="img" id="img2"><img></p>
+                    <p class="major" id="majo2">기업경영학부</p>
+                    <p class="game" id="game2">#물총게임 #농구게임 <br> #동전찾기 게임</p>
+                </div>
+            </div>
+            <div class="location-sector2-wrap">
+                <div class="location-sector1">
+                    <p class="img" id="img2"><img></p>
+                    <p class="major" id="major">패션디자인 학부</p>
+                    <p class="game" id="game">#물총게임 #농구게임 <br> #동전찾기 게임</p>
+                </div>
+                <div class="location-sector2">
+                    <p class="img" id="img"><img></p>
+                    <p class="major" id="major">공간디자인 공학부</p>
+                    <p class="game" id="game">#물총게임 #농구게임 <br> #동전찾기 게임</p>
+                </div>
+            </div>
+        </div>
+        <div id="loc3-wrap">
+            <div class="location-sector1-wrap">
+                <div class="location-sector1">
+                    <p class="img" id="img1"><img></p>
+                    <p class="major" id="major1">융합공학부</p>
+                    <p class="game" id="game1">#물총게임 #농구게임 <br> #동전찾기 게임</p>
+                </div>
+                <div class="location-sector2">
+                    <p class="img" id="img2"><img></p>
+                    <p class="major" id="majo2">멋쟁이사자공학부</p>
+                    <p class="game" id="game2">#물총게임 #농구게임 <br> #동전찾기 게임</p>
+                </div>
+            </div>
+            <div class="location-sector2-wrap">
+                <div class="location-sector1">
+                    <p class="img" id="img2"><img></p>
+                    <p class="major" id="major">상상력인재학부</p>
+                    <p class="game" id="game">#물총게임 #농구게임 <br> #동전찾기 게임</p>
+                </div>
+                <div class="location-sector2">
+                    <p class="img" id="img"><img></p>
+                    <p class="major" id="major">국어국문학부</p>
+                    <p class="game" id="game">#물총게임 #농구게임 <br> #동전찾기 게임</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="second-tap" id="market-wrap">
+        <nav>
+            <div class="loc1" id="location4" onclick="second1()">
+                <span class="loc1-text" id="location4-text">잔디광장</span>
+            </div>
+            <div class="loc2" id="location5" onclick="second2()">
+                <span class="loc2-text" id="location5-text">우촌관</span>
+            </div>
+            <div class="loc3" id="location6" onclick="second3()">
+                <span class="loc3-text" id="location6-text">미래관</span>
+            </div>
+        </nav>
+
+        <div id="loc4-wrap">
+            <div class="location-sector1-wrap">
+                <div class="location-sector1">
+                    <p class="img" id="img1"><img></p>
+                    <p class="major" id="major1">재밌는 공학부</p>
+                    <p class="game" id="game1">#물총게임 #농구게임 <br> #동전찾기 게임</p>
+                </div>
+                <div class="location-sector2">
+                    <p class="img" id="img2"><img></p>
+                    <p class="major" id="majo2">노잼 공학부</p>
+                    <p class="game" id="game2">#물총게임 #농구게임 <br> #동전찾기 게임</p>
+                </div>
+            </div>
+            <div class="location-sector2-wrap">
+                <div class="location-sector1">
+                    <p class="img" id="img2"><img></p>
+                    <p class="major" id="major">자산 학부</p>
+                    <p class="game" id="game">#물총게임 #농구게임 <br> #동전찾기 게임</p>
+                </div>
+                <div class="location-sector2">
+                    <p class="img" id="img"><img></p>
+                    <p class="major" id="major">패션산업 공학부</p>
+                    <p class="game" id="game">#물총게임 #농구게임 <br> #동전찾기 게임</p>
+                </div>
+            </div>
+        </div>
+        <div id="loc5-wrap">
+            <div class="location-sector1-wrap">
+                <div class="location-sector1">
+                    <p class="img" id="img1"><img></p>
+                    <p class="major" id="major1">수학부</p>
+                    <p class="game" id="game1">#물총게임 #농구게임 <br> #동전찾기 게임</p>
+                </div>
+                <div class="location-sector2">
+                    <p class="img" id="img2"><img></p>
+                    <p class="major" id="majo2">과학부</p>
+                    <p class="game" id="game2">#물총게임 #농구게임 <br> #동전찾기 게임</p>
+                </div>
+            </div>
+            <div class="location-sector2-wrap">
+                <div class="location-sector1">
+                    <p class="img" id="img2"><img></p>
+                    <p class="major" id="major">미술학부</p>
+                    <p class="game" id="game">#물총게임 #농구게임 <br> #동전찾기 게임</p>
+                </div>
+                <div class="location-sector2">
+                    <p class="img" id="img"><img></p>
+                    <p class="major" id="major">예술학부</p>
+                    <p class="game" id="game">#물총게임 #농구게임 <br> #동전찾기 게임</p>
+                </div>
+            </div>
+        </div>
+        <div id="loc6-wrap">
+            <div class="location-sector1-wrap">
+                <div class="location-sector1">
+                    <p class="img" id="img1"><img></p>
+                    <p class="major" id="major1">철인3종 학부</p>
+                    <p class="game" id="game1">#물총게임 #농구게임 <br> #동전찾기 게임</p>
+                </div>
+                <div class="location-sector2">
+                    <p class="img" id="img2"><img></p>
+                    <p class="major" id="majo2">보디빌딩학부</p>
+                    <p class="game" id="game2">#물총게임 #농구게임 <br> #동전찾기 게임</p>
+                </div>
+            </div>
+            <div class="location-sector2-wrap">
+                <div class="location-sector1">
+                    <p class="img" id="img2"><img></p>
+                    <p class="major" id="major">축구학부</p>
+                    <p class="game" id="game">#물총게임 #농구게임 <br> #동전찾기 게임</p>
+                </div>
+                <div class="location-sector2">
+                    <p class="img" id="img"><img></p>
+                    <p class="major" id="major">야구학부</p>
+                    <p class="game" id="game">#물총게임 #농구게임 <br> #동전찾기 게임</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <script type="text/javascript" src="/2023BlueFlame/js/booth.js"></script>
 </body>
+
 </html>
