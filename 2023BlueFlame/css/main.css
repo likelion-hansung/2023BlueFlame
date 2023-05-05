@@ -27,6 +27,7 @@
 } */
 html, body{
     font-size:62.5%;
+    background-color: #090B26
 }
 
 p, div{
@@ -35,14 +36,15 @@ p, div{
 }
 
 .sec{
-    height: 100vh;
     background-color: #090B26;
     color: #3A4DEE;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
-
+#sec1{
+    height: 100vh;
+}
 #sec1div{
     width: 100vw;
     background-color: #7881FF14;
@@ -83,11 +85,13 @@ p, div{
 }
 
 .sec2artistA{
-    height: 12vh;
+    height: 15vh;
 }
 .sec2artistA > div{
     position: absolute;
     left: 0;
+    padding-left: 2rem;
+    padding-top: 1.3rem;
 }
 .sec2artistA > div :nth-child(1){
     font-size: 2.4rem;
@@ -101,12 +105,14 @@ p, div{
 }
 
 .sec2artistB{
-    height: 12vh;
+    height: 15vh;
 }
 .sec2artistB > div{
     position: absolute;
     right: 0;
     text-align: right;
+    padding-right: 2rem;
+    padding-top: 1.3rem;
 }
 .sec2artistB > div :nth-child(1){
     font-size: 2.4rem;
