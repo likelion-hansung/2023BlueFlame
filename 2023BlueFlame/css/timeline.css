@@ -1,4 +1,4 @@
-.vr {
+ .vr {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -11,7 +11,18 @@
     margin: 0;
     padding: 0;
   }
-  
+
+  .g-col-4 {
+    margin-top: 10px;
+    color: white;
+  } 
+
+  hr {
+    background:white;
+    height:2px;
+    border:0;
+}
+  /*
   li {
     position: relative;
     padding-left: 20px;
@@ -28,15 +39,15 @@
     border-radius: 50%;
     background-color: black;
   }
-
-  .timetable-box{
+*/
+  /* .timetable-box{
     border-radius: 10px;
     border: 1px solid #ccc;
     padding: 10px;
-    max-height: 80px; /* 최대 높이 설정 */
-    overflow: auto; /* 스크롤 추가 */
-  }
-
+    max-height: 80px; /* 최대 높이 설정 
+    overflow: auto; /* 스크롤 추가 
+  } */
+/*
   .darkblue{
     background-color: #3A4DEE;
   }
@@ -48,5 +59,106 @@
   .lightblue{
     background-color: #f7f7f7;
   }
-  
+   */
 
+   body {
+    height: 10vh;
+    font-family: 'Open Sans', sans-serif;
+    background: #bea2e7;
+    /* Old browsers */
+    background: -moz-linear-gradient(top, #bea2e7 0%, #86b7e7 100%);
+    /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, #bea2e7 0%, #86b7e7 100%);
+    /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, #090B26 0%, #090B26 100%);
+    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#bea2e7', endColorstr='#86b7e7', GradientType=0 );
+    /* IE6-9 */
+    
+  }
+  
+  .container ul {
+    margin: 0;
+    margin-top: 50px;
+    list-style: none;
+    position: relative;
+    padding: 1px 100px;
+    color: #fff;
+    font-size: 13px;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .container ul li {
+    position: relative;
+    margin-left: 30px;
+    background-color: rgba(255, 255, 255, 0.2);
+    padding: 14px;
+    border-radius: 6px;
+    width: 250px;
+    box-shadow: 0 0 4px rgba(0, 0, 0, 0.12), 0 2px 2px rgba(0, 0, 0, 0.08);
+  }
+  
+  .container ul li:not(:first-child) {
+    margin-top: 10px;
+  }
+  
+  .container ul li > span {
+    width: 2px;
+    height: 130%;
+    background: #3A4DEE;
+    left: -30px;
+    top: 0;
+    position: absolute;
+  }
+  
+  .container ul li > span:before,
+  .container ul li > span:after {
+    content: '';
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    border: 2px solid #3A4DEE;
+    position: absolute;
+    background: #3A4DEE;
+    left: -5px;
+    top: 0;
+  }
+  
+  .container ul li > div {
+    margin-left: 10px;
+  }
+  
+  .container ul div .title,
+  .container ul div .type {
+    font-weight: 600;
+    font-size: 16px;
+  }
+  
+  .container ul div .info {
+    font-weight: 300;
+    font-size: 14px;
+  }
+  
+  .container ul li > div > div {
+    margin-top: 0px;
+  }
+  
+  .container ul li span.number {
+    height: 150%;
+  }
+  
+  .container ul li span.number span {
+    position: absolute;
+    font-size: 10px;
+    left: -35px;
+    font-weight: bold;
+  }
+  
+  .container ul li span.number span:first-child {
+    top: 0;
+  }
+  
+  .container ul li span.number span:last-child {
+    top: 0;
+  }
