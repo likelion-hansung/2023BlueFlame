@@ -2,116 +2,185 @@
 body{
     position: relative;
     width: 375px;
-    left: 522px;
-    height: 723px;
+    height: 1416px;
     background: #090B26;
 
     margin: 0px;
+    padding: 0px;
     border: 1px solid red;
+}
+
+/* main-title */
+#main-title{
+    position: absolute;
+    width: 104px;
+    height: 38px;
+    left: 136px;
+    top: 20px;
+
+    font-family: 'BagerichDemo';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 160%;
+
+    text-align: center;
+    letter-spacing: -0.02em;
+    color: #3A4DEE;
+}
+
+#sub-title{
+    position: absolute;
+    width: 55px;
+    height: 14px;
+    left: 161px;
+    top: 58px;
+
+    font-family: 'Pretendard';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 100%;
+    text-align: center;
+
+    color: #3A4DEE;
 }
 
 /* main navbar */
 #first-tap-wrap{
     width: 375px;
-    height: 50px;
+    height: 41px;
     display: flex;
     
     position: absolute;
-    top: 118px;
+    top: 96px;
 }
 
 #first-tap1{
-    width: 187px;
-    height: 50px;
+    width: 125px;
     border-bottom: 1px solid #3A4DEE;
 }
 
 #first-tap2{
-    width: 187px;
-    height: 50px;
+    width: 125px;
+    border-bottom: 1px solid #3A4DEE;
+}
+
+#first-tap3{
+    width: 125px;
     border-bottom: 1px solid #3A4DEE;
 }
 
 #first-time{
-    /* 18:00 이전 */
+    /* day1 */
     position: absolute;
-    left: 66px;
-
+    left: 48px;
+    
     font-family: 'Pretendard';
     font-style: normal;
     font-weight: 500;
     font-size: 12px;
-    line-height: 20px;
-
+    line-height: 100%;
     text-align: center;
-    letter-spacing: 0.1px;
+
     color: #3A4DEE;
 }
 
 #group-info{
-    /* 동아리 부스 */
+    /* 05.10 */
     position: absolute;
-    left: 57px;
-    top: 23px;
+    left: 42px;
+    top: 16px;
 
     font-family: 'Pretendard';
     font-style: normal;
     font-weight: 700;
     font-size: 16px;
-    line-height: 20px;
-
+    line-height: 100%;
     text-align: center;
-    letter-spacing: 0.1px;
     color: #3A4DEE;
 }
 
 #second-time{
     position: absolute;
-    left: 254px;
-
+    left: 172px;
+    
     font-family: 'Pretendard';
     font-style: normal;
     font-weight: 500;
     font-size: 12px;
-    line-height: 20px;
+    line-height: 100%;
 
     text-align: center;
-    letter-spacing: 0.1px;
+
     color: #3A4DEE;
 }
 
 #market-info{
     position: absolute;
-    left: 245px;
-    top: 23px;
+    left: 168px;
+    top: 16px;
 
     font-family: 'Pretendard';
     font-style: normal;
     font-weight: 700;
     font-size: 16px;
-    line-height: 20px;
+    line-height: 100%;
 
     text-align: center;
-    letter-spacing: 0.1px;
     color: #3A4DEE;
 }
+
+#third-time{
+    position: absolute;
+    left: 296px;
+
+    font-family: 'Pretendard';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 100%;
+    text-align: center;
+
+    color: #3A4DEE;
+}
+
+#day3-info{
+    position: absolute;
+    left: 292px;
+    top:16px;
+    
+    font-family: 'Pretendard';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 100%;
+    /* identical to box height, or 125% */
+
+    text-align: center;
+
+    color: #3A4DEE;
+}
+
 
 /* sub-navbar */
 .second-tap{
     position: absolute;
     width: 375px;
-    height: 553px;
-    top: 170px;
+    height: 1408px;
+    top: 136px;
 }
 
 .loc1{
     box-sizing: border-box;
 
     position: absolute;
-    width: 97px;
+    width: 80px;
     height: 38px;
-    left: 26px;
-    top: 16px;
+    left: 19px;
+    top: 12px;
+
+    border-radius: 19px;
     border: 1px solid #3A4DEE;
     border-radius: 19px;
 }
@@ -122,14 +191,12 @@ body{
 
 .loc2{
     box-sizing: border-box;
-
     position: absolute;
-    width: 97px;
+    width: 117px;
     height: 38px;
-    left: 139px;
-    top: 16px;
+    left: 109px;
+    top: 12px;
 
-    background: #3A4DEE;
     border: 1px solid #3A4DEE;
     border-radius: 19px;
 }
@@ -140,13 +207,13 @@ body{
 
 .loc3{
     box-sizing: border-box;
-    position: absolute;
-    width: 97px;
-    height: 38px;
-    left: 252px;
-    top: 16px;
 
-    background: #3A4DEE;
+    position: absolute;
+    width: 117px;
+    height: 38px;
+    left: 236px;
+    top: 12px;
+
     border: 1px solid #3A4DEE;
     border-radius: 19px;
 }
@@ -156,20 +223,18 @@ body{
 }
 
 .loc1-text{
-    /* 잔디광장 */
+    /* 모두보기 */    
     position: absolute;
-    width: 49px;
-    height: 22px;
-    left: 24px;
-    top: 8px;
 
+    top: 9px;
+    left: 15px;
     font-family: 'Pretendard';
     font-style: normal;
     font-weight: 700;
     font-size: 14px;
-    line-height: 160%;
-    
-    text-align: center;
+    line-height: 20px;
+
+    letter-spacing: 0.1px;
 }
 
 #location1-text{
@@ -177,20 +242,20 @@ body{
 }
 
 .loc2-text{
-    /* 우촌관 */
+    /* 이벤트 부스 */
     position: absolute;
-    width: 49px;
-    height: 22px;
-    left: 24px;
-    top: 8px;
+    width: 65px;
+    height: 20px;
+    left: 26px;
+    top: 9px;
 
     font-family: 'Pretendard';
     font-style: normal;
     font-weight: 700;
     font-size: 14px;
-    line-height: 160%;
-    
-    text-align: center;
+    line-height: 20px;
+
+    letter-spacing: 0.1px;
 }
 
 #location2-text{
@@ -198,21 +263,21 @@ body{
 }
 
 .loc3-text{
-    /* 미래관 */
+    /* 먹거리 장터 */
     position: absolute;
-    width: 49px;
-    height: 22px;
-    left: 24px;
-    top: 8px;
+    width: 65px;
+    height: 20px;
+    left: 26px;
+    top: 9px;
 
     font-family: 'Pretendard';
     font-style: normal;
     font-weight: 700;
     font-size: 14px;
-    line-height: 160%;
-    
-    text-align: center;
-    color: #090B26;
+    line-height: 20px;
+    letter-spacing: 0.1px;
+
+    color: #3A4DEE;
 }
 
 #location3-text{
@@ -224,76 +289,116 @@ body{
 .location-sector1-wrap{
 
     position: absolute;
-    top: 70px;
+    top: 74px;
     left: 20px;
-    border: 1px solid white;
     width: 335px;
-    height: 171px;
+    height: 241px;
 }
 
 /* 부스 설명 두번째 sector(2개 묶음) */
 .location-sector2-wrap{
     position: absolute;
-    top: 276px;
+    top: 351px;
     left: 20px;
-    border: 1px solid yellow;
     width: 335px;
-    height: 171px;
+    height: 241px;
 }
 
 /* sector의 첫번째 요소 */
 .location-sector1{
     float: left;
     width: 163px;
-    height: 171px;
-    border: 1px solid gray;
+    height: 241px;
 }
 
 /* sector의 두번째 요소 */
 .location-sector2{
     float: right;
     width: 163px;
-    height: 171px;
-    border: 1px solid gray;
+    height: 241px;
 }
 
 .img{
     position: absolute;
-    width: 163px;
-    height: 115px;
-    margin: 0px;
-
-    background: rgba(58, 77, 238, 0.2);
-    border-radius: 8px;
+    width: 164px;
+    height: 163px;
+    top: 0px;
+    border-radius: 4px;
 }
 
 .major{
     position: absolute;
-    top: 123px;
     margin: 0px;
+    top: 175px;
 
-    font-family: 'Roboto';
-    font-style: normal;
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 20px;
-
-    letter-spacing: 0.1px;
-    color: #3A4DEE;
-}
-
-.game{
-    position: absolute;
-    margin: 0px;
-    top: 146px;
-
-    font-family: 'Roboto';
+    font-family: 'Pretendard';
     font-style: normal;
     font-weight: 500;
     font-size: 10px;
-    line-height: 12px;
-
+    line-height: 100%;
     letter-spacing: 0.1px;
-    color: #3A4DEE;
+    color: #92AAFF;
 }
 
+.sub{
+    position: absolute;
+    margin: 0px;
+    top: 193px;
+
+    font-family: 'Pretendard';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 100%;
+    
+    letter-spacing: 0.1px;
+    color: #92AAFF;
+}
+
+.tag-container{
+    display: flex;
+    position: absolute;
+    top: 223px;
+    margin: 0px;
+}
+
+.place{
+    box-sizing: border-box;
+    padding: 4px 8px;
+    gap: 10px;
+    
+    border: 1px solid #92AAFF;
+    border-radius: 4px;
+
+    font-family: 'Pretendard';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 10px;
+    line-height: 100%;
+    letter-spacing: 0.1px;
+
+    color: #92AAFF;
+}
+
+.tag-info{
+
+    display: flex;
+    box-sizing: border-box;
+
+    padding: 4px 8px;
+    gap: 10px;
+    
+    top: 223px;
+    
+    border: 1px solid #627BFF;
+    border-radius: 4px;
+
+    font-family: 'Pretendard';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 10px;
+    line-height: 100%;
+    letter-spacing: 0.1px;
+
+    color: #627BFF;
+}
