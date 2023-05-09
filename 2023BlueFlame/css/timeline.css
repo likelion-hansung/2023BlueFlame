@@ -61,6 +61,11 @@
    height: 2px;
  }
 
+  /* 선택된 요일의 스타일 */
+  .grid .g-col-4:hover {
+    cursor: pointer; 
+  }
+
  .darkblue {
    background-color: #627BFF;
  }
@@ -120,7 +125,7 @@
    margin-left: 30px;
    padding: 14px;
    border-radius: 6px;
-   width: 250px;
+   width: 260px;
    box-shadow: 0 0 4px rgba(0, 0, 0, 0.12), 0 2px 2px rgba(0, 0, 0, 0.08);
  }
 
@@ -185,8 +190,10 @@
   border-radius: 50%;
   background-color: #090B26;
   vertical-align: middle;
+  margin-top:-1%;
  }
 
+  
  .container ul li>div>div {
    margin-top: 0px;
  }
