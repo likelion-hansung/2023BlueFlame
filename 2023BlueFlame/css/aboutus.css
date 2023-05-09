@@ -23,7 +23,7 @@ body{
     padding-top: 50px;
 }
 
-nav{
+.aboutus-nav{
     text-align: center;
     display: flex;
     flex-direction: row;
