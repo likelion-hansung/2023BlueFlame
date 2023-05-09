@@ -214,6 +214,7 @@ input[id="icon"]:checked + label > span:nth-child(3) {
     color: #92AAFF;
     width: 90%;
     height: 100%;
+    cursor: pointer;
 }
 
 #sec3nav{
@@ -239,4 +240,8 @@ input[id="icon"]:checked + label > span:nth-child(3) {
 
 .navButtonText{
     text-align: left;
+}
+
+.arrow>Img{
+    width: 15px;
 }
