@@ -20,10 +20,14 @@ p, div{
 ul {
     list-style: none; /* ul 요소의 리스트 스타일을 없앰 */
     padding: 0;
-  }
+    margin-top: 20px;
+}
 
+li{
+    margin-top: 35px;
+}
 .menu_item{
-    font-size: 1.5rem;
+    font-size: 1.7rem;
 }
 
 .navbar {
@@ -36,6 +40,12 @@ ul {
 
 .icon{
     height: 100px;
+}
+
+.menu_item_flex{
+    display: flex;
+    position: relative;
+    flex-direction: row;
 }
 
 input[id="icon"] {
@@ -53,7 +63,8 @@ input[id="icon"] + label{
     width:24px;
     height:15px;
     cursor:pointer;  /* 커서를 올려놓을 때 모양이 바뀐다. */
-    margin-left: 90%;
+    margin-left: 350px;
+    margin-top: 15px;
 } 
 
 input[id="icon"] + label > span {
@@ -101,7 +112,6 @@ input[id="icon"]:checked + label > span:nth-child(3) {
     height:100%;
     background:#FFF;
     top:0px;
-    padding:10px 25px 25px 25px;
     box-sizing:border-box;
     right:-300px;
     z-index:1;
@@ -117,6 +127,10 @@ input[id="icon"]:checked + label > span:nth-child(3) {
     margin-left: 2%;
 }
 
+.line{
+    margin-top: 27px;
+    border-top: 1px solid #3A4DEE;
+}
 
 .sec{
     background-color: #090B26;
@@ -162,6 +176,7 @@ input[id="icon"]:checked + label > span:nth-child(3) {
     width: 100vw;
     background-color: #7881FF14;
 }
+
 .sec2day > p{
     height: 5vh;
     font-size: 1rem;

@@ -17,33 +17,6 @@
 </head>
 
 <body>
-    <!-- <nav class="navbar bg-light fixed-end">
-        <div class="container-fluid">
-          <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
-            <div class="offcanvas-header">
-              <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Menu</h5>
-              <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-            </div>
-            <div class="offcanvas-body">
-              <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
-                <li class="nav-item">
-                  <a class="nav-link active" aria-current="page" href="timeline.html">타임 테이블</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="booth.html">부스 안내</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="aboutus.html">About us</a>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </nav> -->
-      
     <nav class="navbar fixed-top">
         <input type="checkbox" id="icon">
     <label for="icon">  <!--label은 인라인 스타일-->
@@ -52,11 +25,21 @@
         <span></span>
     </label>
     <div id="header">
-        <img src="../img/Menu.png" style="height: 4vh;">
-        <ul class="menu_item">
-            <li><a href="timeline.html">타임 테이블</a></li>
-            <li><a href="booth.html">부스 안내</a></li>
-            <li><a href="aboutus.html">About us</a></li>
+        <img src="../img/Menu.png" style="height: 3vh; margin-top: 27px; margin-left: 30px;" >
+        <div class="line"></div>
+        <ul class="menu_item" style="margin-left: 30px;">
+            <li>
+                <img src="../img/Vector.png" style="height: 1.5vh;">
+                <a href="timeline.html">타임 테이블</a>
+            </li>
+            <li>
+                <img src="../img/Vector.png" style="height: 1.5vh;">
+                <a href="booth.html">부스 안내</a>
+            </li>
+            <li>
+                <img src="../img/Vector.png" style="height: 1.5vh;">
+                <a href="aboutus.html">About us</a>
+            </li>
         </ul>
     </div>
     </nav>
@@ -141,7 +124,7 @@
                 </div>  
             </div>
             <div class="secButton">
-                <button type="button" class="navButton" onclick="location.href='booth.html'">
+                <button type="button" class="navButton" onclick="location.href='timeline.html'">
                     <div class="navButtonText">
                         <p style="font-size: 1.6rem; font-weight: 600;">타임 테이블</p>
                         <p style="font-size: 1.4rem; font-weight: 400;">바로가기</p>
@@ -155,22 +138,21 @@
         <div class="container">
             <div id="sec3nav">
                 <div class="item">
-                    <img style="height: 100%;" src="../img/store.png">
+                    <img style="height: 24px;" src="../img/store.png">
                 </div>
                 <div class="item" style="color: #92AAFF;">
                         부스 정보를 알고싶어요!
                 </div>  
             </div>
-            <div id="secButton">
+            <div class="secButton">
                 <button type="button" class="navButton" onclick="location.href='timeline.html'">
                     <div class="navButtonText">
-                        <p class="pretendardSB" style="font-size: 1.6rem; font-weight: 600;">부스 안내</p>
-                        <p class="pretendardR" style="font-size: 1.4rem; font-weight: 400;">바로가기</p>
+                        <p style="font-size: 1.6rem; font-weight: 600;">부스 안내</p>
+                        <p style="font-size: 1.4rem; font-weight: 400;">바로가기</p>
                     </div>
                     <div class="arrow">
                         <img style="height: 100%;" src="../img/Arrow 1.png">
                     </div>
-                    
                 </button>
             </div>
         </div>
