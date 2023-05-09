@@ -1,17 +1,27 @@
+function day1(){
+    window.location.href = "/2023BlueFlame/pages/booth(Day1).html";
+}
+
+function day2(){
+    window.location.href = "/2023BlueFlame/pages/booth(Day2).html";
+}
+
+function day3(){
+    window.location.href = "/2023BlueFlame/pages/booth(Day3).html";
+}
+
 function first1(){
-    $('#group-wrap').show();
-    $('#market-wrap').hide();
-    $('#day3-wrap').hide();
+    $('#day1-wrap').show();
 
     $('#loc1-wrap').show();
     $('#loc2-wrap').hide();
     $('#loc3-wrap').hide();
 
     $('#first-time').css("color", "#92AAFF");
-    $('#group-info').css("color", "#92AAFF");
+    $('#day1-info').css("color", "#92AAFF");
 
     $('#second-time').css("color", "#3A4DEE");
-    $('#market-info').css("color", "#3A4DEE");
+    $('#day2-info').css("color", "#3A4DEE");
     $('#third-time').css("color", "#3A4DEE");
     $('#day3-info').css("color", "#3A4DEE");
 
@@ -57,20 +67,18 @@ function first3(){
 }
 
 function second1(){
-    $('#market-wrap').show();
-    $('#group-wrap').hide();
-    $('#day3-wrap').hide();
+    $('#day2-wrap').show();
     $('#loc4-wrap').show();
     $('#loc5-wrap').hide();
     $('#loc6-wrap').hide();
 
     $('#first-time').css("color", "#3A4DEE");
-    $('#group-info').css("color", "#3A4DEE");
+    $('#day1-info').css("color", "#3A4DEE");
     $('#third-time').css("color", "#3A4DEE");
     $('#day3-info').css("color", "#3A4DEE");
 
     $('#second-time').css("color", "#92AAFF");
-    $('#market-info').css("color", "#92AAFF");
+    $('#day2-info').css("color", "#92AAFF");
 
     $('#location4').css("background","#92AAFF");
     $('#location5').css("background","rgba(58, 77, 238, 0.2)");
@@ -114,17 +122,17 @@ function second3(){
 
 function third1(){
     $('#day3-wrap').show();
-    $('#group-wrap').hide();
-    $('#market-wrap').hide();
+    $('#day1-wrap').hide();
+    $('#day2-wrap').hide();
     $('#loc7-wrap').show();
     $('#loc8-wrap').hide();
     $('#loc9-wrap').hide();
 
     $('#first-time').css("color", "#3A4DEE");
-    $('#group-info').css("color", "#3A4DEE");
+    $('#day1-info').css("color", "#3A4DEE");
 
     $('#second-time').css("color", "#3A4DEE");
-    $('#market-info').css("color", "#3A4DEE");
+    $('#day2-info').css("color", "#3A4DEE");
 
     $('#third-time').css("color", "#92AAFF");
     $('#day3-info').css("color", "#92AAFF");
