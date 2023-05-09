@@ -144,7 +144,7 @@ input[id="icon"]:checked + label > span:nth-child(3) {
 
 #icon + label + #header {
     position:fixed;  /* 스크롤을 내리더라도 같은 위치에서 붙어다닌다. */
-    width:300px;
+    width:70%;
     height:100%;
     background:#FFF;
     top:0px;
