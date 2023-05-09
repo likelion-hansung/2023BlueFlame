@@ -110,6 +110,15 @@ input[id="icon"]:checked + label > span:nth-child(3) {
     color: #3A4DEE;
 
 } */
+
+.navbar-toggler {
+    border: none; /* 테두리 제거 */
+    background-color: transparent; /* 배경색 제거 */
+}
+.navbar {
+    z-index: 1;
+}  
+
 .sec{
     height: 100vh;
     background-color: #090B26;

@@ -6,26 +6,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- 부트스트랩 CSS 파일 추가 -->
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.1.0/js/bootstrap.bundle.min.js"></script>
 
 <!-- jQuery 라이브러리 파일 추가 -->
 <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
-
+<script>
+    $(document).ready(function() {
+      // 오프캔버스 토글
+      $('[data-bs-toggle="offcanvas"]').on('click', function() {
+        $('.offcanvas').toggleClass('open');
+      });
+  
+      // 내비게이션 메뉴 클릭
+      $('.nav-link').on('click', function() {
+        $('.offcanvas').removeClass('open');
+      });
+    });
+  </script>
     <link rel="stylesheet" href="../css/default.css">
     <link rel="stylesheet" href="../css/main.css">
 
     <title>2023 대동제:Blue Flame</title>
 </head>
 <body>
-
-    
-    <!-- <div id="header">
-        <ul id="menu">
-            <li><a href="booth.html">부스</a></li>
-            <li><a href="timeline.html">타임라인</a></li>
-        </ul>
-        
-    </div> -->
-    <!--  -->
 
     <nav class="navbar bg-light fixed-top">
         <div class="container-fluid">
@@ -143,7 +146,7 @@
         <div class="container">
             <div id="sec3nav">
                 <div class="item">
-                    <img style="height: 100%;" src="../img/folderlist.png">
+                    <img style="height: 100%;" src="../img/store.png">
                 </div>
                 <div class="item">
                         부스 정보를 알고싶어요!
