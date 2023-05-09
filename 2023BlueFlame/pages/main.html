@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- 부트스트랩 CSS 파일 추가 -->
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.1.0/js/bootstrap.bundle.min.js"></script>
 
 <!-- jQuery 라이브러리 파일 추가 -->
 <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
@@ -15,43 +16,60 @@
     <title>2023 대동제:Blue Flame</title>
 </head>
 
-<body class="pretendardM">
-    <nav class="navbar bg-light fixed-top">
+<body>
+    <!-- <nav class="navbar bg-light fixed-end">
         <div class="container-fluid">
-        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+          <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
             <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+          </button>
+          <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
             <div class="offcanvas-header">
-            <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Menu</h5>
-            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+              <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Menu</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
             </div>
             <div class="offcanvas-body">
-            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+              <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
                 <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="timeline.html">타임 테이블</a>
+                  <a class="nav-link active" aria-current="page" href="timeline.html">타임 테이블</a>
                 </li>
                 <li class="nav-item">
-                <a class="nav-link" href="booth.html">부스 안내</a>
+                  <a class="nav-link" href="booth.html">부스 안내</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="aboutus.html">About us</a>
+                  <a class="nav-link" href="aboutus.html">About us</a>
                 </li>
-            </ul>
+              </ul>
             </div>
+          </div>
         </div>
-        </div>
+      </nav> -->
+      
+      <nav class="navbar fixed-top">
+        <input type="checkbox" id="icon">
+    <label for="icon">  <!--label은 인라인 스타일-->
+        <span></span>
+        <span></span>
+        <span></span>
+    </label>
+    <div id="header">
+        <ul>
+            <li><a href="#">menu1</a></li>
+            <li><a href="#">menu1</a></li>
+            <li><a href="#">menu1</a></li>
+            <li><a href="#">menu1</a></li>
+        </ul>
+    </div>
     </nav>
     <section class="sec" id="sec1">
         <div>
-            <p style="font-size: 1.4rem;">2023년 한성대학교 대동제</p>
-            <img src="../img/LogoText.png" alt="BlueFlame" style="margin-top: 2vh; margin-bottom: 4vh;">
-            <p style="font-size: 1.2rem; margin-bottom: 2vh;">05/10 Wed - 05/12 Fri</p>
+            <p style="font-size: 1.4rem; color: #3A4DEE";>2023년 한성대학교 대동제</p>
+            <img src="../img/LogoText.png" alt="BlueFlame" style="margin-top: 2vh; margin-bottom: 4vh; width: 70%;">
+            <p style="font-size: 1.2rem; margin-bottom: 2vh; color: #3A4DEE">05/10 Wed - 05/12 Fri</p>
             <img src="../img/SwipeLogo.png" alt="hsu_logo_img" class="img-fluid" style="height: 50vh;"/>
             <div id="sec1div">
                 <p>높은 온도에서 푸른빛을 띠는 파란 불꽃<br>
                 푸른빛 일렁이며 뜨겁게 타오르는 대동제</p>
-                <p class="pretendardL">Blue flame with blue light at high temperature<br>
+                <p style="font-weight: 300;">Blue flame with blue light at high temperature<br>
                 Blue a wave of sparks that is made together in Daedongje and burned hot</p>
             </div>
         </div>
@@ -116,17 +134,17 @@
         <div class="container">
             <div id="sec3nav">
                 <div class="item">
-                    <img style="height: 100%;" src="../img/folderlist.png">
+                    <img style="height: 24px;" src="../img/folderlist.png">
                 </div>
-                <div class="item">
+                <div class="item" style="color: #92AAFF;">
                         행사 순서를 보고싶어요!
                 </div>  
             </div>
             <div class="secButton">
                 <button type="button" class="navButton" onclick="location.href='booth.html'">
                     <div class="navButtonText">
-                        <p style="font-size: 1.3rem;">타임 테이블</p>
-                        <p>바로가기</p>
+                        <p style="font-size: 1.6rem; font-weight: 600;">타임 테이블</p>
+                        <p style="font-size: 1.4rem; font-weight: 400;">바로가기</p>
                     </div>
                     <div class="arrow">
                         <img style="height: 100%;" src="../img/Arrow 1.png">
@@ -137,17 +155,17 @@
         <div class="container">
             <div id="sec3nav">
                 <div class="item">
-                    <img style="height: 100%;" src="../img/folderlist.png">
+                    <img style="height: 100%;" src="../img/store.png">
                 </div>
-                <div class="item">
+                <div class="item" style="color: #92AAFF;">
                         부스 정보를 알고싶어요!
                 </div>  
             </div>
             <div id="secButton">
                 <button type="button" class="navButton" onclick="location.href='timeline.html'">
                     <div class="navButtonText">
-                        <p style="font-size: 1.3rem;">타임 테이블</p>
-                        <p>바로가기</p>
+                        <p class="pretendardSB" style="font-size: 1.6rem; font-weight: 600;">부스 안내</p>
+                        <p class="pretendardR" style="font-size: 1.4rem; font-weight: 400;">바로가기</p>
                     </div>
                     <div class="arrow">
                         <img style="height: 100%;" src="../img/Arrow 1.png">
@@ -157,5 +175,16 @@
             </div>
         </div>
     </section>
+    <footer style="background-color: #151937;">
+        <p style="color: #92AAFFCC; font-weight: 700;">Contact</p>
+        <div style="margin-top: 9px;">
+            <p>Instagram</p>
+            <p>@likelion_hansung</p>
+        </div>
+        <div style="margin-top: 6px;">
+            <p>Kakaotalk</p>
+            <p>한성대학교 멋쟁이사자처럼</p>
+        </div>
+    </footer>
 </body>
 </html>
