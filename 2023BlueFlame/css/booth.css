@@ -1,81 +1,47 @@
 /* 부스 */
+html{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+}
+
+p{margin: 0;}
+
 body{
-    position: relative;
-    width: 375px;
-    height: 1416px;
     background: #090B26;
-
-    margin: 0px;
-    padding: 0px;
-    border: 1px solid red;
-}
-
-/* main-title */
-#main-title{
-    position: absolute;
-    width: 104px;
-    height: 38px;
-    left: 136px;
-    top: 20px;
-
-    font-family: 'BagerichDemo';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 24px;
-    line-height: 160%;
-
-    text-align: center;
-    letter-spacing: -0.02em;
-    color: #3A4DEE;
-}
-
-#sub-title{
-    position: absolute;
-    width: 55px;
-    height: 14px;
-    left: 161px;
-    top: 58px;
-
-    font-family: 'Pretendard';
-    font-style: normal;
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 100%;
-    text-align: center;
-
-    color: #3A4DEE;
+    padding: 0;
+    margin: 0;
 }
 
 /* main navbar */
 #first-tap-wrap{
-    width: 375px;
-    height: 41px;
     display: flex;
-    
-    position: absolute;
-    top: 96px;
+    width: 100%;
 }
 
 #first-tap1{
-    width: 125px;
+    width: 33%;
+    text-align: center;
     border-bottom: 1px solid #3A4DEE;
 }
 
 #first-tap2{
-    width: 125px;
+    width: 33%;
+    text-align: center;
     border-bottom: 1px solid #3A4DEE;
 }
 
 #first-tap3{
-    width: 125px;
+    width: 33%;
+    text-align: center;
     border-bottom: 1px solid #3A4DEE;
 }
 
 #first-time{
     /* day1 */
-    position: absolute;
-    left: 48px;
-    
     font-family: 'Pretendard';
     font-style: normal;
     font-weight: 500;
@@ -88,10 +54,6 @@ body{
 
 #day1-info{
     /* 05.10 */
-    position: absolute;
-    left: 42px;
-    top: 16px;
-
     font-family: 'Pretendard';
     font-style: normal;
     font-weight: 700;
@@ -102,87 +64,60 @@ body{
 }
 
 #second-time{
-    position: absolute;
-    left: 172px;
-    
     font-family: 'Pretendard';
     font-style: normal;
     font-weight: 500;
     font-size: 12px;
     line-height: 100%;
-
-    text-align: center;
-
     color: #3A4DEE;
 }
 
 #day2-info{
-    position: absolute;
-    left: 168px;
-    top: 16px;
-
     font-family: 'Pretendard';
     font-style: normal;
     font-weight: 700;
     font-size: 16px;
     line-height: 100%;
-
-    text-align: center;
     color: #3A4DEE;
 }
 
 #third-time{
-    position: absolute;
-    left: 296px;
-
     font-family: 'Pretendard';
     font-style: normal;
     font-weight: 500;
     font-size: 12px;
     line-height: 100%;
-    text-align: center;
-
     color: #3A4DEE;
 }
 
 #day3-info{
-    position: absolute;
-    left: 292px;
-    top:16px;
-    
     font-family: 'Pretendard';
     font-style: normal;
     font-weight: 700;
     font-size: 16px;
     line-height: 100%;
-    /* identical to box height, or 125% */
-
-    text-align: center;
-
     color: #3A4DEE;
 }
 
-
-/* sub-navbar */
-.second-tap{
-    position: absolute;
-    width: 375px;
-    height: 1408px;
-    top: 136px;
+.second-nav{
+    display: flex;
+    width: 100%;
+    margin-top: 12px;
 }
 
+/* sub-navbar */
 .loc1{
     box-sizing: border-box;
-
-    position: absolute;
     width: 80px;
     height: 38px;
-    left: 19px;
-    top: 12px;
+    text-align: center;
 
     border-radius: 19px;
     border: 1px solid #3A4DEE;
     border-radius: 19px;
+    line-height: 32px;
+    margin-right: 10px;
+    margin-left: 10px;
 }
 
 #location1{
@@ -191,64 +126,43 @@ body{
 
 .loc2{
     box-sizing: border-box;
-    position: absolute;
     width: 117px;
     height: 38px;
-    left: 109px;
-    top: 12px;
+    text-align: center;
+    line-height: 32px;
+    margin-right: 10px;
 
     border: 1px solid #3A4DEE;
     border-radius: 19px;
 }
 
-#location2{
-    background: #3A4DEE;
-}
 
 .loc3{
     box-sizing: border-box;
-
-    position: absolute;
     width: 117px;
     height: 38px;
-    left: 236px;
-    top: 12px;
+    text-align: center;
+    line-height: 32px;
+    margin-right: 10px;
 
     border: 1px solid #3A4DEE;
     border-radius: 19px;
 }
 
-#location3{
-    background: #3A4DEE;
-}
 
 .loc1-text{
     /* 모두보기 */    
-    position: absolute;
-
-    top: 9px;
-    left: 15px;
     font-family: 'Pretendard';
     font-style: normal;
     font-weight: 700;
     font-size: 14px;
     line-height: 20px;
-
     letter-spacing: 0.1px;
 }
 
-#location1-text{
-    color: #090B26;
-}
 
 .loc2-text{
     /* 이벤트 부스 */
-    position: absolute;
-    width: 65px;
-    height: 20px;
-    left: 26px;
-    top: 9px;
-
     font-family: 'Pretendard';
     font-style: normal;
     font-weight: 700;
@@ -258,18 +172,9 @@ body{
     letter-spacing: 0.1px;
 }
 
-#location2-text{
-    color: #090B26;
-}
 
 .loc3-text{
     /* 먹거리 장터 */
-    position: absolute;
-    width: 65px;
-    height: 20px;
-    left: 26px;
-    top: 9px;
-
     font-family: 'Pretendard';
     font-style: normal;
     font-weight: 700;
@@ -280,49 +185,35 @@ body{
     color: #3A4DEE;
 }
 
-#location3-text{
-    color: #090B26;
-}
-
 /* 세부 내용 */
 /* 부스 설명 sector(2개 묶음) */
 .location-sector-wrap{
     display: block;
-    position: relative;
-    top: 74px;
-    left: 20px;
-    width: 335px;
+    margin-top: 24px;
+    margin-left: 10px;
+    margin-right: 10px;
     height: 241px;
-    margin-bottom: 36px;
 }
 
 /* sector의 첫번째 요소 */
 .location-sector1{
     float: left;
-    width: 163px;
     height: 241px;
+    margin-right: 9px;
 }
 
 /* sector의 두번째 요소 */
 .location-sector2{
-    float: right;
-    width: 163px;
     height: 241px;
+    float:right
 }
 
 .img{
-    position: absolute;
-    width: 164px;
     height: 163px;
-    top: 0px;
     border-radius: 4px;
 }
 
 .major{
-    position: absolute;
-    margin: 0px;
-    top: 175px;
-
     font-family: 'Pretendard';
     font-style: normal;
     font-weight: 500;
@@ -330,18 +221,16 @@ body{
     line-height: 100%;
     letter-spacing: 0.1px;
     color: #92AAFF;
+    margin-top: 12px;
 }
 
 .sub{
-    position: absolute;
-    margin: 0px;
-    top: 193px;
-
     font-family: 'Pretendard';
     font-style: normal;
     font-weight: 700;
     font-size: 14px;
     line-height: 100%;
+    margin-top: 8px;
     
     letter-spacing: 0.1px;
     color: #92AAFF;
@@ -349,9 +238,6 @@ body{
 
 .tag-container{
     display: flex;
-    position: absolute;
-    top: 223px;
-    margin: 0px;
 }
 
 .place{
@@ -370,17 +256,15 @@ body{
     letter-spacing: 0.1px;
 
     color: #92AAFF;
+    margin-top: 16px;
 }
 
 .tag-info{
-
     display: flex;
     box-sizing: border-box;
 
     padding: 4px 8px;
     gap: 10px;
-    
-    top: 223px;
     
     border: 1px solid #627BFF;
     border-radius: 4px;
@@ -393,4 +277,6 @@ body{
     letter-spacing: 0.1px;
 
     color: #627BFF;
+    margin-top: auto;
+    margin-left: 4px;
 }

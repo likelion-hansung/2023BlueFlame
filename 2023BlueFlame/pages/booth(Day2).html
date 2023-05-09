@@ -4,74 +4,80 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
     <link rel="stylesheet" href="/2023BlueFlame/css/default.css">
     <link rel="stylesheet" href="/2023BlueFlame/css/booth.css">
     <title>부스</title>
 </head>
 
 <body onload="second1()">
-    <div id="main-title-wrap">
-        <p id="sub-title">부스 안내</p>
-    </div>
-    <nav id="first-tap-wrap">
-        <div id="first-tap1" onclick="day1()">
-            <span id="first-time">Day 1</span>
-            <span id="day1-info">05.10</span>
-        </div>
-
-        <div id="first-tap2" onclick="second1()">
-            <span id="second-time">Day 2</span>
-            <span id="day2-info">05.11</span>
-        </div>
-
-        <div id="first-tap3" onclick="day3()">
-            <span id="third-time">Day 3</span>
-            <span id="day3-info">05.12</span>
-        </div>
-    </nav>
-
-    <div class="second-tap" id="day2-wrap">
-        <nav>
-            <div class="loc1" id="location4" onclick="second1()">
-                <span class="loc1-text" id="location4-text">모두보기</span>
+    <div class="container">
+        <nav id="first-tap-wrap">
+            <div id="first-tap1" onclick="day1()">
+                <span id="first-time">Day 1</span>
+                <br>
+                <span id="day1-info">05.10</span>
             </div>
-            <div class="loc2" id="location5" onclick="second2()">
-                <span class="loc2-text" id="location5-text">이벤트 부스</span>
+
+            <div id="first-tap2" onclick="second1()">
+                <span id="second-time">Day 2</span>
+                <br>
+                <span id="day2-info">05.11</span>
             </div>
-            <div class="loc3" id="location6" onclick="second3()">
-                <span class="loc3-text" id="location6-text">먹거리 장터</span>
+
+            <div id="first-tap3" onclick="day3()">
+                <span id="third-time">Day 3</span>
+                <br>
+                <span id="day3-info">05.12</span>
             </div>
         </nav>
 
-        <div id="loc4-wrap">
-             <!-- for문 써야할 부분 -->
-             <div class="location-sector-wrap">
-                <div class="location-sector1">
-                    <p><img class="img" src="/2023BlueFlame/img/booth_img/flea market.png"></p>
-                    <p class="major" id="major1">총학생회</p>
-                    <p class="sub">플리마켓</p>
-                    <p class="tag-container">
-                        <span class="place">미래관 1-2</span>
-                    </p>
-                    </p>
+        <div class="second-tap" id="day2-wrap">
+            <nav class="second-nav">
+                <div class="loc1" id="location4" onclick="second1()">
+                    <span class="loc1-text" id="location4-text">모두보기</span>
                 </div>
-                <div class="location-sector2">
-                    <p><img class="img" src="/2023BlueFlame/img/booth_img/movie.png"></p>
-                    <p class="major">학생복지위원회</p>
-                    <p class="sub">MOVIE FESTIVAL</p>
-                    <p class="tag-container">
-                        <span class="place">잔디광장</span><span class="tag-info">탑건-매버릭</span>
-                    </p>
+                <div class="loc2" id="location5" onclick="second2()">
+                    <span class="loc2-text" id="location5-text">이벤트 부스</span>
                 </div>
+                <div class="loc3" id="location6" onclick="second3()">
+                    <span class="loc3-text" id="location6-text">먹거리 장터</span>
+                </div>
+            </nav>
+
+            <div id="loc4-wrap">
+                <!-- for문 써야할 부분 -->
+                <div class="location-sector-wrap">
+                    <div class="location-sector1">
+                        <p><img class="img" src="/2023BlueFlame/img/booth_img/flea market.png"></p>
+                        <p class="major" id="major1">총학생회</p>
+                        <p class="sub">플리마켓</p>
+                        <p class="tag-container">
+                            <span class="place">미래관 1-2</span>
+                        </p>
+                        </p>
+                    </div>
+                    <div class="location-sector2">
+                        <p><img class="img" src="/2023BlueFlame/img/booth_img/movie.png"></p>
+                        <p class="major">학생복지위원회</p>
+                        <p class="sub">MOVIE FESTIVAL</p>
+                        <p class="tag-container">
+                            <span class="place">잔디광장</span><span class="tag-info">탑건-매버릭</span>
+                        </p>
+                    </div>
+                </div>
+                <!-- 여기까지 -->
             </div>
-            <!-- 여기까지 -->
-        </div>
-        <div id="loc5-wrap">
-    
-        </div>
-        <div id="loc6-wrap">
-            
+            <div id="loc5-wrap">
+
+            </div>
+            <div id="loc6-wrap">
+
+            </div>
         </div>
     </div>
 
