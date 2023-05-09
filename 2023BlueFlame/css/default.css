@@ -96,10 +96,10 @@ body{
 input[id="icon"] + label{
     position: relative;
     display:block;
-    width:24px;
+    width:20px;
     height:15px;
     cursor:pointer;  /* 커서를 올려놓을 때 모양이 바뀐다. */
-    margin-left: 350px;
+    margin-left: 85%;
     margin-top: 15px;
 } 
 
