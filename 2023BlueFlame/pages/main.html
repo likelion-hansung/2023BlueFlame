@@ -4,7 +4,25 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <!-- 부트스트랩 CSS 파일 추가 -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+
+<!-- jQuery 라이브러리 파일 추가 -->
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+<script>
+    $(document).ready(function() {
+        // 오프캔버스 토글
+        $('.offcanvas').offcanvas('show');
+$('.offcanvas').offcanvas('hide');
+        });
+    
+        // 내비게이션 메뉴 클릭
+        $('.nav-link').on('click', function() {
+        $('.offcanvas-collapse').removeClass('open');
+        });
+    });
+</script> 
+
     <link rel="stylesheet" href="../css/default.css">
     <link rel="stylesheet" href="../css/main.css">
 
@@ -12,6 +30,7 @@
 </head>
 <body>
 
+    
     <!-- <div id="header">
         <ul id="menu">
             <li><a href="booth.html">부스</a></li>
@@ -19,9 +38,37 @@
         </ul>
         
     </div> -->
+    <!--  -->
+
+    <nav class="navbar bg-light fixed-top">
+        <div class="container-fluid">
+          <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+            <div class="offcanvas-header">
+              <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Menu</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+              <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="timeline.html">타임 테이블</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="booth.html">부스 안내</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="aboutus.html">About us</a>
+                  </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </nav>
     <section class="sec" id="sec1">
         <p style="font-size: 1.4rem; margin-top: 6vh;">2023년 한성대학교 대동제</p>
-        <p style="font-size: 6rem;">Blue Flame</p>
+        <p style="font-size: 6rem;">Blue Flame</p> 
         <p style="font-size: 1.2rem;">05/10 Wed - 05/12 Fri</p>
         <img style="height: 60%;" src="../img/SwipeLogo.png"/>
         <div id="sec1div">
@@ -83,6 +130,50 @@
                 <img alt="릴김치"/>
             </div>
         </div>
+    </section>
+    <section class="sec" id="sec3">
+        <div class="container">
+            <div id="sec3nav">
+                <div class="item">
+                    <img style="height: 100%;" src="../img/folderlist.png">
+                </div>
+                <div class="item">
+                        행사 순서를 보고싶어요!
+                </div>  
+            </div>
+            <div class="secButton">
+                <button type="button" class="navButton">
+                    <div class="navButtonText">
+                        <p>타임 테이블</p>
+                        <p>바로가기</p>
+                    </div>
+                    
+                </button>
+            </div>
+        </div>
+        <div class="container">
+            <div id="sec3nav">
+                <div class="item">
+                    <img style="height: 100%;" src="../img/folderlist.png">
+                </div>
+                <div class="item">
+                        부스 정보를 알고싶어요!
+                </div>  
+            </div>
+            <div id="secButton">
+                <button type="button" class="navButton">
+                    <div class="navButtonText">
+                        <p>타임 테이블</p>
+                        <p>바로가기</p>
+                    </div>
+                    <div class="arrow">
+                        <img style="height: 100%;" src="../img/folderlist.png">
+                    </div>
+                    
+                </button>
+            </div>
+        </div>
+        
     </section>
 </body>
 </html>

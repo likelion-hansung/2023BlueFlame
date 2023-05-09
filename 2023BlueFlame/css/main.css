@@ -34,6 +34,82 @@ p, div{
     padding: 0;
 }
 
+/* input[id="icon"] {
+    display:none;
+} 
+
+body{
+    height:5000px;
+}
+
+input[id="icon"] + label{
+    position: relative;
+    display:block;
+    width:24px;
+    height:20px;
+    cursor:pointer;  /* 커서를 올려놓을 때 모양이 바뀐다.
+} 
+
+input[id="icon"] + label > span {
+    position: absolute;
+    display:block;
+    width:100%;
+    height:2px;
+    background:#3A4DEE;
+    transition: all 0.35s;  /* 진행되는 과정들을 천천히 보여줄 수 있다. 0.35초 동안 진행됨 
+    z-index:2;
+
+}
+
+input[id="icon"] + label > span:nth-child(1) {
+    top:0px;
+}
+
+input[id="icon"] + label > span:nth-child(2) {
+    top:50%;
+    transform: translateY(-50%);  /* 엘리먼트를 변형할 때 쓴다. 비틀거나 구부리거나 돌릴 때 . 여러가지로 모양을 바꿀 때 
+}
+
+input[id="icon"] + label > span:nth-child(3) {
+    bottom:0px;
+}
+
+
+input[id="icon"]:checked + label > span:nth-child(1) {
+    top:50%;
+    transform:translateY(-50%) rotate(45deg);
+}
+
+input[id="icon"]:checked + label > span:nth-child(2) {
+    opacity: 0;
+}
+
+input[id="icon"]:checked + label > span:nth-child(3) {
+    bottom:50%;
+    transform:translateY(50%) rotate(-45deg);
+}
+
+#icon + label + #header {
+    position:fixed;  /* 스크롤을 내리더라도 같은 위치에서 붙어다닌다. 
+    width:300px;
+    height:100%;
+    background:#FFF;
+    /* top:0px;
+    padding:60px 25px 25px 25px; 
+    box-sizing:border-box;
+    right:-300px;
+    z-index:1;
+    transition: all 0.35s;
+}
+
+#icon:checked + label + #header {
+    right:0px;
+}
+
+#icon:checked + label + #header > ul > li > a {
+    color: #3A4DEE;
+
+} */
 .sec{
     height: 100vh;
     background-color: #090B26;
@@ -117,4 +193,50 @@ p, div{
 .sec2artistB > img{
     position: absolute;
     left: 0;
+}
+
+.container {
+    display: grid;
+	grid-template-columns: 1fr 1fr;
+    /* height: 6vh; */
+    margin-top: 20px;
+    
+}
+
+.navButton{
+    display: flex;
+    position: relative;
+    flex-direction: row;
+    align-items: center;
+    background: rgba(127, 154, 205, 0.1);
+    border: 1px solid #92AAFF;
+    border-radius: 16px;
+    color: #92AAFF;
+    width: 90%;
+    height: 100%;
+}
+
+#sec3nav{
+    display: flex;
+    flex-direction: column;
+    height: 6vh;
+    margin-left: 1rem;
+}
+
+#sec3nav :nth-child(1){
+    height: 50%;
+
+}
+
+#sec3nav :nth-child(2){
+    font-size: 1.3rem;
+}
+
+.arrow{
+    position: absolute;
+    right: 5%;
+}
+
+.navButtonText{
+    text-align: left;
 }
