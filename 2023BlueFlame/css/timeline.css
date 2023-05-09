@@ -17,29 +17,36 @@
     color: white;
   } 
 
-  hr {
-    background:white;
-    height:2px;
-    border:0;
+/* 각 요일에 대한 스타일 */
+.grid .g-col-4 {
+  position: relative;
+  color: #3A4DEE;
 }
-  /*
-  li {
-    position: relative;
-    padding-left: 20px;
-    margin-bottom: 30px;
-  }
+
+/* 밑에 선 스타일 */
+.grid .g-col-4::after {
+  content: "";
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+  height: 1px;
+  background-color: #3A4DEE;
+}
+
+/* 선택된 요일의 스타일 */
+.grid .g-col-4.active {
+  color: #92AAFF;
+}
+
+/* 선택된 요일의 밑에 선 스타일 */
+.grid .g-col-4.active::after {
+  background-color: #92AAFF;
+  height: 2px;
+}
   
-  li::before {
-    content: "";
-    position: absolute;
-    left: 0;
-    top: 6px;
-    width: 10px;
-    height: 10px;
-    border-radius: 50%;
-    background-color: black;
-  }
-*/
+  
   /* .timetable-box{
     border-radius: 10px;
     border: 1px solid #ccc;
@@ -47,19 +54,19 @@
     max-height: 80px; /* 최대 높이 설정 
     overflow: auto; /* 스크롤 추가 
   } */
-/*
+
   .darkblue{
-    background-color: #3A4DEE;
+    background-color: #627BFF;
   }
 
   .blue{
-    background-color: #f7f7f7;
+    background-color: #92AAFF;
   }
 
   .lightblue{
-    background-color: #f7f7f7;
+    background-color: #B4C9FF;
   }
-   */
+  
 
    body {
     height: 10vh;
@@ -75,24 +82,34 @@
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#bea2e7', endColorstr='#86b7e7', GradientType=0 );
     /* IE6-9 */
     
+    margin-left:20%;
+    margin-right:20%;
   }
   
+  .container {
+    text-align: center;/* 가운데정렬 */
+    width: 80%;
+  }
+
+  .container .container-box{
+    display: inline-block;/* 가운데정렬 */
+  }
+
   .container ul {
     margin: 0;
-    margin-top: 50px;
+    margin-top: 10%;
     list-style: none;
     position: relative;
-    padding: 1px 100px;
-    color: #fff;
+    color: #090B26;
     font-size: 13px;
     justify-content: center;
     align-items: center;
   }
   
   .container ul li {
+    text-align: left;
     position: relative;
     margin-left: 30px;
-    background-color: rgba(255, 255, 255, 0.2);
     padding: 14px;
     border-radius: 6px;
     width: 250px;
@@ -104,9 +121,9 @@
   }
   
   .container ul li > span {
-    width: 2px;
+    width: 1px;
     height: 130%;
-    background: #3A4DEE;
+    background: #92AAFF;
     left: -30px;
     top: 0;
     position: absolute;
@@ -115,13 +132,13 @@
   .container ul li > span:before,
   .container ul li > span:after {
     content: '';
-    width: 12px;
-    height: 12px;
+    width: 7px;
+    height: 7px;
     border-radius: 50%;
-    border: 2px solid #3A4DEE;
+    border: 0.5px solid #92AAFF;
     position: absolute;
-    background: #3A4DEE;
-    left: -5px;
+    background: #92AAFF;
+    left: -3px;
     top: 0;
   }
   
@@ -131,13 +148,13 @@
   
   .container ul div .title,
   .container ul div .type {
-    font-weight: 600;
-    font-size: 16px;
+    font-weight: 500;
+    font-size: 15px;
   }
   
   .container ul div .info {
-    font-weight: 300;
-    font-size: 14px;
+    font-weight: 500;
+    font-size: 12px;
   }
   
   .container ul li > div > div {
@@ -146,12 +163,14 @@
   
   .container ul li span.number {
     height: 150%;
+    color:#92AAFF;
+  
   }
   
   .container ul li span.number span {
     position: absolute;
     font-size: 10px;
-    left: -35px;
+    left: -45px;
     font-weight: bold;
   }
   
