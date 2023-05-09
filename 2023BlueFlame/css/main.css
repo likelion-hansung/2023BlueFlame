@@ -139,6 +139,7 @@ p, div{
     color: #92AAFF;
     width: 90%;
     height: 100%;
+    cursor: pointer;
 }
 
 #sec3nav{
@@ -164,4 +165,8 @@ p, div{
 
 .navButtonText{
     text-align: left;
+}
+
+.arrow>Img{
+    width: 15px;
 }
