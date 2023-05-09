@@ -91,9 +91,9 @@ nav>#nav2{
     margin-bottom: 54px;
 }
 /* 만든 이들 페이지 */
-#creator-page{
+/* #creator-page{
     padding-left: 2vw;
-}
+} */
 .creator{
     font-size: 1.25em;
     font-weight: 600;
@@ -103,6 +103,7 @@ nav>#nav2{
     color: #92AAFF;
 
     margin-top: 5vh;
+    padding-left: 2vw;
 }
 .creator-box{
     display: flex;
@@ -171,4 +172,5 @@ nav>#nav2{
 #be-box{
     color: #FFFFFF;
     background-color:  #627BFF;
+    margin-bottom: 70px;
 }
