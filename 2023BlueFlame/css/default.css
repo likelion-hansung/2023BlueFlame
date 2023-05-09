@@ -1,5 +1,11 @@
 @import "main.css";
 
+@font-face {
+    font-family: 'Pretendard-Light';
+    src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+}
 
 @font-face {
     font-family: 'Pretendard-Medium';
@@ -15,7 +21,10 @@
     font-style: normal;
 }
 
-.pretendard{
+.pretendardL{
+    font-family: 'Pretendard-Light';
+}
+.pretendardM{
     font-family: 'Pretendard-Medium';
 }
 

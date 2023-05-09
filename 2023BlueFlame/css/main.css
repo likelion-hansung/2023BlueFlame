@@ -25,6 +25,7 @@
     font-size: 8px;
     line-height: 160%;
 } */
+
 html, body{
     font-size:62.5%;
     background-color: #090B26
@@ -40,34 +41,42 @@ p, div{
     color: #3A4DEE;
     display: flex;
     flex-direction: column;
+    justify-content: center;
     align-items: center;
 }
 #sec1{
     height: 100vh;
 }
+#sec1 > div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 #sec1div{
     width: 100vw;
     background-color: #7881FF14;
-    color: #3A4DEE;
+    color: #92AAFF;
     display: flex;
     flex-direction: column;
     text-align: center;
     margin-top: 2vh;
+    padding: 1.6rem 0 1.6rem 0;
 }
 
 #sec1div :nth-child(1){
     font-size: 1.1rem;
-    margin-top: 1.6rem;
+    line-height: 1.8rem;
 }
 
 #sec1div :nth-child(2){
+    margin-top: 0.7vh;
     font-size: 0.8rem;
-    margin-bottom: 1.6rem;
+    line-height: 1.3rem;
 }
 
 #sec2{
-    position: relative;
     padding-top: 7vh;
+    color: #92AAFF;
 }
 .sec2day{
     width: 100vw;
@@ -76,51 +85,64 @@ p, div{
 .sec2day > p{
     height: 5vh;
     font-size: 1rem;
-    color: #3A4DEE;
-    border-top: 1px solid #3A4DEE;
-    border-bottom: 1px solid #3A4DEE;
+    border-top: 1px solid #92AAFF;
+    border-bottom: 1px solid #92AAFF;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
 .sec2artistA{
-    height: 15vh;
+    height: 12vh;
 }
 .sec2artistA > div{
+    width: 100vw;
+    max-width: 48rem;
+    margin: 0 auto;
+    position: relative;
+}
+.sec2artistA > div > div{
     position: absolute;
     left: 0;
     padding-left: 2rem;
     padding-top: 1.3rem;
 }
-.sec2artistA > div :nth-child(1){
-    font-size: 2.4rem;
+.sec2artistA > div > div :nth-child(1){
+    height: 2rem;
 }
-.sec2artistA > div :nth-child(2){
+.sec2artistA > div > div :nth-child(2){
     font-size: 1.1rem;
 }
-.sec2artistA > img{
+.sec2artistA > div > img{
     position: absolute;
     right: 0;
+    height: 12vh;
 }
 
 .sec2artistB{
-    height: 15vh;
+    height: 12vh;
 }
 .sec2artistB > div{
+    width: 100vw;
+    max-width: 48rem;
+    margin: 0 auto;
+    position: relative;
+}
+.sec2artistB > div > div{
     position: absolute;
     right: 0;
     text-align: right;
     padding-right: 2rem;
     padding-top: 1.3rem;
 }
-.sec2artistB > div :nth-child(1){
-    font-size: 2.4rem;
+.sec2artistB > div > div :nth-child(1){
+    height: 2rem;
 }
-.sec2artistB > div :nth-child(2){
+.sec2artistB > div > div :nth-child(2){
     font-size: 1.1rem;
 }
-.sec2artistB > img{
+.sec2artistB > div > img{
     position: absolute;
     left: 0;
+    height: 12vh;
 }
