@@ -1,11 +1,11 @@
-#main{
+/* #main{
     background-color: #090B26;
     text-align: center ;
     color: #3A4DEE;
 }
 
 .mainTitleText{
-    /* 2023년 한성대학교 대동제 */
+    2023년 한성대학교 대동제
 
     font-size: 14px;
     line-height: 160%;
@@ -24,4 +24,97 @@
 .mainSmallText{
     font-size: 8px;
     line-height: 160%;
+} */
+html, body{
+    font-size:62.5%;
+}
+
+p, div{
+    margin: 0;
+    padding: 0;
+}
+
+.sec{
+    height: 100vh;
+    background-color: #090B26;
+    color: #3A4DEE;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#sec1div{
+    width: 100vw;
+    background-color: #7881FF14;
+    color: #3A4DEE;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin-top: 2vh;
+}
+
+#sec1div :nth-child(1){
+    font-size: 1.1rem;
+    margin-top: 1.6rem;
+}
+
+#sec1div :nth-child(2){
+    font-size: 0.8rem;
+    margin-bottom: 1.6rem;
+}
+
+#sec2{
+    position: relative;
+    padding-top: 7vh;
+}
+.sec2day{
+    width: 100vw;
+    background-color: #7881FF14;
+}
+.sec2day > p{
+    height: 5vh;
+    font-size: 1rem;
+    color: #3A4DEE;
+    border-top: 1px solid #3A4DEE;
+    border-bottom: 1px solid #3A4DEE;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sec2artistA{
+    height: 12vh;
+}
+.sec2artistA > div{
+    position: absolute;
+    left: 0;
+}
+.sec2artistA > div :nth-child(1){
+    font-size: 2.4rem;
+}
+.sec2artistA > div :nth-child(2){
+    font-size: 1.1rem;
+}
+.sec2artistA > img{
+    position: absolute;
+    right: 0;
+}
+
+.sec2artistB{
+    height: 12vh;
+}
+.sec2artistB > div{
+    position: absolute;
+    right: 0;
+    text-align: right;
+}
+.sec2artistB > div :nth-child(1){
+    font-size: 2.4rem;
+}
+.sec2artistB > div :nth-child(2){
+    font-size: 1.1rem;
+}
+.sec2artistB > img{
+    position: absolute;
+    left: 0;
 }
