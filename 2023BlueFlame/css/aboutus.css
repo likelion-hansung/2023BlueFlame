@@ -172,7 +172,7 @@ nav>#nav2{
 #be-box{
     color: #FFFFFF;
     background-color:  #627BFF;
-    margin-bottom: 70px;
+    margin-bottom: 30px;
 }
 .aboutus-title{
     color: #3A4DEE;
@@ -186,4 +186,8 @@ nav>#nav2{
     text-align: center;
 
     margin-bottom: 20px;
+}
+.inspired{
+    text-align: center;
+    margin-bottom: 30px;
 }
