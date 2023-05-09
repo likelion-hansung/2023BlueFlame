@@ -174,3 +174,16 @@ nav>#nav2{
     background-color:  #627BFF;
     margin-bottom: 70px;
 }
+.aboutus-title{
+    color: #3A4DEE;
+    font-family: 'Pretendard';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 160%;
+    /* or 22px */
+
+    text-align: center;
+
+    margin-bottom: 20px;
+}
