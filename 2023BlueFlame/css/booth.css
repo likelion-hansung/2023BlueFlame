@@ -19,7 +19,7 @@ body{
 /* main navbar */
 #first-tap-wrap{
     display: flex;
-    width: 100%;
+    width: 100vw;
 }
 
 #first-tap1{
