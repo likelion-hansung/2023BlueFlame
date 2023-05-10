@@ -1,15 +1,88 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/boothDetail.css">
+    <link rel="stylesheet" href="../css/default.css">
     <title>Document</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.1.0/js/bootstrap.bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
 </head>
+
 <body>
-    <div class="track">대학- 트랙</div>
-    <div class="pub"> 트랙 주점 </div>
-    <div class="img"><img src=""></div>
-    <div class="booth-info">설명글 블ㄹ라라라라ㅏㄹ라ㅏ라라라라라라라라ㅏ라라라라라ㅏㅏㄹ라ㅏ랄랄</div>
+    <nav class="navbar fixed-top">
+        <input type="checkbox" id="icon">
+        <label for="icon"> <!--label은 인라인 스타일-->
+            <span></span>
+            <span></span>
+            <span></span>
+        </label>
+        <div id="header">
+            <img src="../img/Menu.png" style="height: 3vh; margin-top: 27px; margin-left: 30px;">
+            <div class="line"></div>
+            <ul class="menu_item" style="margin-left: 30px;">
+                <li>
+                    <img src="../img/Vector.png" style="height: 1.5vh;">
+                    <a href="timeline.html">타임 테이블</a>
+                </li>
+                <li class="menu_li">
+                    <img src="../img/Vector.png" style="height: 1.5vh;">
+                    <a href="booth.html">부스 안내</a>
+                </li>
+                <li class="menu_li">
+                    <img src="../img/Vector.png" style="height: 1.5vh;">
+                    <a href="aboutus.html">About us</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <div class="boothDetail-container">
+        <div class="blank-box"></div>
+        <div class="track">대학 - 트랙</div>
+        <div class="pub"> 트랙 주점 </div>
+        <div class="booth-img"><img src="../img/booth.png"></div>
+        <div class="booth-info">설명글 블ㄹ라라라라ㅏㄹ라ㅏ라라라라라라라라ㅏ라라라라라ㅏㅏㄹ라ㅏ랄랄<br>ㅇㅇㄴㄹㄴㄹㄴㅇㄹㄹㄴㅇ<br></div>
+        <div class="detail-insta">INSTA : @hansung_student</div>
+        <hr class="boothDetail-hr">
+
+        <div class="menu">
+            <div class="menu-title">메뉴</div>
+            <div class="menu-detail">
+                <div class="menu-food">황도</div>
+                <div class="menu-price">₩ 3000</div>
+            </div>
+            <div class="menu-detail">
+                <div class="menu-food">황도</div>
+                <div class="menu-price">₩ 3000</div>
+            </div>
+        </div>
+        <!-- 동아리 설명 -->
+        <!-- <div class="club-info">
+
+        </div> -->
+        <hr class="boothDetail-hr">
+        <div class="place-box">
+            <div class="place-title">장소</div>
+            <div class="booth-location">상상관 8-9</div>
+        </div>
+
+        <img class="place-img" src="../img/place.png">
+    </div>
+    <footer style="background-color: #151937;">
+        <p style="color: #92AAFFCC; font-weight: 700;">Contact</p>
+        <div style="margin-top: 9px;">
+            <p>Instagram</p>
+            <p>@likelion_hansung</p>
+        </div>
+        <div style="margin-top: 6px;">
+            <p>Kakaotalk</p>
+            <p>한성대학교 멋쟁이사자처럼</p>
+        </div>
+    </footer>
 </body>
+
 </html>
